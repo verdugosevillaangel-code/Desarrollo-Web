@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> Datos Personales </h1>
+<p> Diferentes formas de mostrar mis datos usando JavaScript. </p>
+
+<hr>
+
+<h2> 1. innerHTML </h2>
+<p> Permite renderizar etiquetas HTML dentro del elemento: </p>
+<p id="demo1"></p>
+
+<script>
+document.getElementById("demo1").innerHTML = "<strong>Nombre:</strong> Angel Sevilla";
+</script>
+
+<hr>
+
+<h2> 2. innerText </h2>
+<p> Inserta únicamente texto plano (ignora las etiquetas HTML si las tuviera): </p>
+<p id="demo2"></p>
+
+<script>
+document.getElementById("demo2").innerText = "Carrera: Ingeniería de Software";
+</script>
+
+<hr>
+
+<h2> 3. document.write() </h2>
+<p> Escribe directamente en el flujo del documento HTML: </p>
+
+<script>
+document.write("Grupo: 301");
+</script>
+
+<hr>
+
+<h2> 4. window.alert() </h2>
+<p> Muestra un cuadro de alerta al cargar la página (seguramente ya lo viste al abrir este archivo). </p>
+
+<script>
+window.alert("Verdugo Sevilla Ángel Uriel - Ejercicio 19");
+</script>
+
+<hr>
+
+<h2> 5. console.log() </h2>
+<p> Presiona F12 o abre las herramientas de desarrollador para ver este dato en la Consola. </p>
+
+<script>
+console.log("HOLA!!!!");
+</script>
+
+</body>
+</html>
