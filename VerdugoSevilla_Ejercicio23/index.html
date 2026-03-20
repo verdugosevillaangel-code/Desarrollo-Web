@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Verdugo Sevilla Angel Uriel - Ejercicio 23 </title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #fdf2f8; display: flex; justify-content: center; padding: 40px; }
+        .card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); width: 380px; border: 1px solid #fbcfe8; }
+        h2 { text-align: center; color: #db2777; margin-bottom: 25px; }
+        .input-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-weight: 600; color: #4b5563; }
+        input { width: 100%; padding: 12px; border: 2px solid #f3f4f6; border-radius: 10px; box-sizing: border-box; outline: none; transition: 0.3s; }
+        input:focus { border-color: #f472b6; }
+        button { width: 100%; padding: 15px; background-color: #db2777; color: white; border: none; border-radius: 10px; font-size: 1rem; cursor: pointer; font-weight: bold; transition: 0.3s; }
+        button:hover { background-color: #be185d; transform: translateY(-2px); }
+        #resultado-imc { margin-top: 25px; padding: 20px; border-radius: 12px; text-align: center; display: none; }
+        .valor-imc { font-size: 2rem; font-weight: 800; display: block; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2> Calculadora de IMC </h2>
+        
+        <div class="input-group">
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" step="0.1" placeholder="Ej: 65.5">
+        </div>
+
+        <div class="input-group">
+            <label for="altura">Estatura (cm):</label>
+            <input type="number" id="altura" placeholder="Ej: 165">
+        </div>
+
+        <button onclick="calcularIMC()">Calcular Mi Índice</button>
+
+        <div id="resultado-imc">
+            </div>
+    </div>
+
+    <script src="script_ej23.js"></script>
+</body>
+</html>
