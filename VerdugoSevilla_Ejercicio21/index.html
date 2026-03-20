@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Verdugo Sevilla Angel Uriel - Ejercicio 21 </title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #eef2f3; display: flex; justify-content: center; padding-top: 50px; }
+        .container { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 350px; }
+        h2 { text-align: center; color: #333; }
+        .input-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; }
+        .buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 20px; }
+        button { padding: 10px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.3s; color: white; }
+        .btn-suma { background-color: #28a745; }
+        .btn-resta { background-color: #dc3545; }
+        .btn-div { background-color: #ffc107; color: #333; }
+        .btn-exp { background-color: #17a2b8; }
+        button:hover { opacity: 0.8; transform: scale(1.05); }
+        #resultado-caja { margin-top: 20px; padding: 15px; background: #f8f9fa; border-left: 5px solid #007bff; border-radius: 4px; min-height: 40px; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2> Calculadora </h2>
+        
+        <div class="input-group">
+            <label for="n1"> Número A: </label>
+            <input type="number" id="n1" placeholder="Ej: 10">
+        </div>
+
+        <div class="input-group">
+            <label for="n2">Número B:</label>
+            <input type="number" id="n2" placeholder="Ej: 2">
+        </div>
+
+        <div class="buttons">
+            <button class="btn-suma" onclick="operar('suma')">Sumar (+)</button>
+            <button class="btn-resta" onclick="operar('resta')">Restar (-)</button>
+            <button class="btn-div" onclick="operar('div')">Dividir (/)</button>
+            <button class="btn-exp" onclick="operar('exp')">Potencia (^)</button>
+        </div>
+
+        <div id="resultado-caja">
+            Esperando operación...
+        </div>
+    </div>
+
+    <script src="script_ej21.js"></script>
+</body>
+</html>
