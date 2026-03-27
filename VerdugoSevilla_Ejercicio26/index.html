@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Verdugo Sevilla Angel Uriel - Ejercicio 26 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>Tablas de Multiplicar a tu Medida</h1>
+        <p>Introduce un número para generar todas las tablas desde el 1 hasta ese valor.</p>
+        
+        <div class="input-area">
+            <label for="limite">¿Hasta qué tabla quieres generar?</label>
+            <input type="number" id="limite" placeholder="Ej: 5" min="1">
+            <button onclick="generarTablas()">Generar Tablas</button>
+        </div>
+
+        <div id="contenedor-tablas" class="grid-tablas"></div>
+    </div>
+
+    <script src="script_ej26.js"></script>
+</body>
+</html>
