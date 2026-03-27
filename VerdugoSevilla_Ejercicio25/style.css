@@ -1,0 +1,91 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Contenedor principal centrado */
+.main-container {
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 { color: #2c3e50; margin-bottom: 10px; }
+p { color: #7f8c8d; margin-bottom: 30px; }
+
+/* Estilos para el botón */
+button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    background-color: #3498db; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Efectos visuales al pasar el mouse por encima del botón */
+button:hover {
+    background-color: #2980b9; /* Azul más oscuro */
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Contenedor Grid que organiza las tablas automáticamente */
+.grid-tablas {
+    display: grid;
+    /* Crea columnas de mínimo 180px que se ajustan al ancho disponible */
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px; /* Espacio entre tablas */
+    margin-top: 30px;
+}
+
+/* Estilos para cada tarjeta de tabla individual */
+.tabla-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    border-top: 5px solid #3498db; /* Línea de color azul arriba */
+    transition: transform 0.3s;
+}
+
+/* Efecto sutil al pasar el mouse sobre una tabla */
+.tabla-card:hover {
+    transform: scale(1.03);
+}
+
+.tabla-card h3 {
+    margin-top: 0;
+    color: #34495e;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para las líneas de operación (ej: 1 x 1 = 1) */
+.linea-operacion {
+    font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+    font-size: 1rem;
+    margin: 8px 0;
+    color: #555;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.linea-operacion strong {
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
